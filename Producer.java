@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class Producer {
+public class Producer extends Thread {
     private final Buffer buffer;
     private final Random random;
 

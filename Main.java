@@ -5,10 +5,11 @@ public class Main {
     public static void main(String[] args) {
         //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
         // to see how IntelliJ IDEA suggests fixing it.
-            var buffer = new Buffer(10);
+            var buffer   = new Buffer(10);
+            var producer = new Producer(buffer);
 
-            new Consumer(buffer).start();
-            new Producer(buffer).start();
+            producer.start();
+
         }
     }
 }

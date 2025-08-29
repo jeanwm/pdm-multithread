@@ -36,6 +36,8 @@ public class Buffer {
 
     public void produce (int value) {
         while (isFull()) {
+            System.out.print("Buffer cheio, aguardando...");
+
             try {
                 synchronized (full) {
                     full.wait();
